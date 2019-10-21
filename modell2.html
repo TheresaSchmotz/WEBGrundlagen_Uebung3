@@ -6,6 +6,18 @@
     <style>
         body, html { margin:0; height:100%; font-family:sans-serif; }
 
+        main{
+            height: 100%;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 150px 1fr 150px;
+            grid-template-areas:
+                    "NAV HEADER"
+                    "NAV ARTICLE"
+                    "NAV FOOTER"
+        ;
+        }
+
         main > * {
             padding:10px;
             font-weight:bold;
