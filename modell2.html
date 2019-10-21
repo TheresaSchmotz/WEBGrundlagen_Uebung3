@@ -9,31 +9,36 @@
         main{
             height: 100%;
             display: grid;
-            grid-template-columns: 200px 1fr;
+            grid-template-columns: 200px 1fr 150px;
             grid-template-rows: 150px 1fr 150px;
             grid-template-areas:
-                    "NAV HEADER"
-                    "NAV ARTICLE"
-                    "NAV FOOTER"
+                    "NAV HEADER HEADER"
+                    "NAV ARTICLE ASIDE"
+                    "NAV FOOTER FOOTER"
         ;
         }
 
         main > * {
             padding:10px;
             font-weight:bold;
+            grid-area: ARTICLE;
         }
 
         nav {
             background:RoyalBlue;
+            grid-area: NAV;
         }
         header {
             background: OliveDrab;
+            grid-area: HEADER;
         }
         footer {
             background: Orchid;
+            grid-area: FOOTER;
         }
         aside {
             background:OrangeRed;
+            grid-area: ASIDE;
         }
 
     </style>
